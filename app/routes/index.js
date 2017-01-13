@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findALL('question');
+    return this.store.findAll('question');
   },
 
   actions: {
@@ -12,7 +12,7 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
 
-    destroyRental(question) {
+    destroyQuestion(question) {
       question.destroyRecord();
       this.transitionTo('index');
     }

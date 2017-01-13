@@ -1,0 +1,10 @@
+{ "questions": [{
+    "author": "Quinn Schwartz",
+    "content": "What is the meaning of life?",
+    "notes": "and don't say 42"
+  }, {
+        "author": "Frank Black",
+        "content": "Where is my mind?",
+        "notes": "I went swimming in the carribean and now i can't find it."
+  }]
+}
