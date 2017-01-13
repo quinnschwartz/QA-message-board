@@ -1,7 +1,12 @@
-# question-answer
+# Q&A Message Board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Epicodus project demonstrating a basic understanding of how to build a web application using the MVC Ember.  
+
+By Quinn Schwartz
+
+## Description
+
+This web page will enable the user to enter and edit questions that can be saved to a forum and can be answered by other users (Javascript week 2 independent project).  
 
 ## Prerequisites
 
@@ -39,14 +44,12 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+## link
 
-Specify what it takes to deploy your app.
+https://quinnschwartz.github.io/doctor-lookup/
 
-## Further Reading / Useful Links
+## Legal  
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+this software is licensed under the MIT license.
+
+Copyright (c) 2017 _Quinn Schwartz
