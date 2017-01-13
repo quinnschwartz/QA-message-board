@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('question');
+    return Ember.RSVP.hash({
+      questions: this.store.findAll('question'),
+      answers: this.store.findAll('answer')
+    });
   },
 
   actions: {
@@ -11,7 +14,11 @@ export default Ember.Route.extend({
       newQuestion.save();
       this.transitionTo('index');
     },
-
+    saveAnswer(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+      newAnswer.save();
+      this.transitionTo('index');
+    },
     destroyQuestion(question) {
       question.destroyRecord();
       this.transitionTo('index');

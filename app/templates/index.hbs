@@ -1,9 +1,17 @@
 {{outlet}}
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
 
 {{new-question saveQuestion="saveQuestion"}}
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.content}} - by {{answer.author}}</li>
+  {{/each}}
+</ul>
+
+{{new-answer saveAnswer="saveAnswer"}}
