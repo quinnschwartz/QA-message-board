@@ -2,7 +2,7 @@
 
 <ul>
   {{#each model.questions as |question|}}
-    {{question-tile question=question destroyQuestion="destroyQuestion"}}
+    {{question-tile question=question}}
   {{/each}}
 </ul>
 
@@ -13,5 +13,3 @@
     <li>{{answer.content}} - by {{answer.author}}</li>
   {{/each}}
 </ul>
-
-{{new-answer saveAnswer="saveAnswer"}}
