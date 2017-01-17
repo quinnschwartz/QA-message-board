@@ -1,8 +1,22 @@
 {{outlet}}
 
+<h2>Question:</h2>
+
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
+<br>
 {{edit-question question=model edit="edit"}}
 
-{{answer-tile answer=model destroyAnswer="destroyAnswer"}}
+<!-- {{answer-tile answer=model destroyAnswer="destroyAnswer"}} -->
+
+<h2>Answers:</h2>
+
+<ol>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+  {{/each}}
+</ol>
 
 {{new-answer saveAnswer="saveAnswer" question=model}}
+
+
+<!-- {{new-answer saveAnswer="saveAnswer"}} -->

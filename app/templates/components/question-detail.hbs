@@ -1,9 +1,6 @@
-{{question.author}} {{question.content}} {{question.notes}}
 
-<ul>
-  {{#each question.answers as |answer|}}
-    {{answer-tile answer=answer}}
-  {{/each}}
-</ul>
-
+<p>{{question.content}}</p> <p>{{question.notes}}</p>
+Posted by {{question.author}}
+<br>
+<br>
 <button {{action 'delete' question}}>Delete Question</button>
